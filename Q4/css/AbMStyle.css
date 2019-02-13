@@ -1,0 +1,94 @@
+/*
+Graham Pomfret
+0595995
+Assignment 1
+COIS 3420
+
+This is the fourth question, This is the css file */
+
+
+/* affects the whole page to establish a background color and make it shrink if you have a smaller window*/
+body
+{
+	width:100%;
+	background-color:lightblue;
+}
+/* makes links purple*/
+a
+{
+	color:purple;
+}
+/* hovering over links gives it the classic orange on purple color*/
+a:hover
+{
+	color:orange;
+}
+/* first heading which is used as a page title mostly*/
+h1
+{
+	background-color:purple;
+	border-bottom: .1em solid black;
+	color:white;	
+	font-family: 'brush script mt', 'times new roman';
+	font-size: 36pt;	
+}
+/* other headings*/
+h2, h3
+{
+	border-bottom:.2em solid black;
+	background-color:purple;
+	color:white;
+	font-family: 'brush script mt', 'times new roman';
+	font-size:24pt;
+}
+/* making heading 3 not have the backgronud color go behind my picture*/
+h3
+{
+	width:75%;
+}
+ol, ul
+{
+	border:.2em solid green;
+	list-style:decimal;
+	font-family: 'times new roman';
+	font-size: 16pt;
+	padding:1em;
+	margin: 1em;
+}
+/* makes the lists colors different on alternating lines*/
+ul li:nth-child(even), ol li:nth-child(even)
+{
+	width:100%;
+	background-color:#566890;
+	
+}
+ul li:nth-child(odd), ol li:nth-child(odd)
+{	
+	width:100%;
+	background-color:#566870;
+}
+/* pictures*/
+img
+{
+	padding: 2em;
+	width: 15em;
+	height: 15em;
+	float:right;
+}
+/* setting benchmark for paragraphs*/
+p
+{
+	font-family: 'times new roman';
+	font-size: 16pt;
+	padding: .7em;
+}
+/* this is the styling for the table on the recipes page, sets a white border*/
+td
+{
+	border:.4em solid white;
+}
+/* and makes the first row of headings green on the table */
+tr:first-child
+{
+	color:green;
+}

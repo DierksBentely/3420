@@ -1,0 +1,72 @@
+/* Graham Pomfret
+0595995
+Assignment 1
+COIS 3420
+
+This is the first question of the first assignment, This is the style sheet for my schedule 
+Done in Notepad++ I did my best effort to make it look like it was done in a real compiler */
+
+/* the title part my schedule*/
+h1
+{
+	font-size:48pt; 
+	font-weight:bold;
+	color:purple;
+}
+/* sets the table so it takes up the whole screen*/
+table
+{
+	table-layout: fixed;
+	width:100%;
+}
+/* references every cell in the table */
+td
+{
+	vertical-align:middle;
+	font-size:2em;
+	border:3px solid black;
+}
+/* colors all even rows */
+tr:nth-child(even)
+{
+	height:50px;
+	background-color:#4d6c92;
+}
+/* colors all odd rows */
+tr:nth-child(odd)
+{
+	height:50px;
+	background-color:#8d6c92;
+}
+/* day is the bar at the beginning that contains the days, monday tuesday wednesday etc */
+td.day
+{
+	background-color:#1d6c92;
+}
+/* I picked certain colors for each course The NEXT FOUR are referencing the specific courses regardless of 
+their location in the table*/
+td.cois3040
+{
+	font-size:12pt; 
+	font-weight:bold;
+	background-color:yellow;
+}
+td.cois3420
+{
+	font-size:12pt; 
+	font-weight:bold;
+	background-color:red;
+}
+td.math2600
+{
+	font-size:12pt; 
+	font-weight:bold;
+	background-color:orange;
+}
+/* this was named other although it is a course, its the one I made up to take up 3 columns*/
+td.other
+{
+	font-size:12pt; 
+	font-weight:bold;
+	background-color:green;
+}

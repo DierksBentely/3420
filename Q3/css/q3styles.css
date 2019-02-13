@@ -1,0 +1,99 @@
+/*
+Graham Pomfret
+0595995
+Assignment 1
+COIS 3420
+
+This is the third question, about the flexbox
+
+*/
+
+/* first Question */
+#q3a
+{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row;
+	align-items:flex-end;
+}
+
+/* second Question */
+#q3b
+{
+	display:flex;
+	justify-content:flex-end;
+	flex-direction:column-reverse;
+	align-items:center;
+}
+
+/* third Question */
+#q3c
+{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row-reverse;
+	flex-wrap:wrap;
+}
+
+/* fourth Question */
+#q3d
+{
+	display:flex;
+	flex-direction:row;
+	align-items:flex-end;
+}
+
+#q3d :nth-child(2)
+{
+	align-self:flex-start;
+}
+#q3d :nth-child(3)
+{
+	flex-grow:3;
+}
+#q3d :nth-child(4)
+{
+	align-self:flex-start;
+}
+#q3d :nth-child(5)
+{
+	align-self:flex-start;
+	align-self:flex-start;
+}
+
+/* fifth Question */
+#q3e
+{
+	display:flex;
+	flex-direction:row;
+}
+#q3e :nth-child(1)
+{
+	order:6;
+}
+#q3e :nth-child(2)
+{
+	order:5;
+	align-self:flex-start;
+}
+#q3e :nth-child(3)
+{
+	order:2;
+	align-self:flex-end;
+}
+#q3e :nth-child(4)
+{
+	order:3;
+	align-self:flex-end;
+	margin-left:auto;
+}
+#q3e :nth-child(5)
+{
+	align-self:flex-start;
+	order:1;
+}
+#q3e :nth-child(6)
+{
+	align-self:flex-end;
+	order:4;
+}

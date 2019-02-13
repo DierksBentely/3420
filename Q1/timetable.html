@@ -1,0 +1,170 @@
+<!--Graham Pomfret
+0595995
+Assignment 1
+COIS 3420
+
+This is the first question of the first assignment, This is an updated version of my schedule with colors and cell merging
+Done in Notepad++ I did my best effort to make it look like it was done in a real compiler-->
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+<!-- mandatory includes of the reset and this file's style sheet -->
+<head>
+	<meta charset="UTF-8">
+	<title> Schedule </title>
+	<link rel="stylesheet" type='text/css' href="include/reset.css">
+	<link rel="stylesheet" type='text/css' href="include/style.css">
+</head>
+
+<!--this is the header which tells the user what the page is -->
+<h1> My Class Schedule </h1>
+
+
+<!--This is the table for the days  -->
+<table>
+<tbody>
+<!-- this is the start of the first row which encoumpases the entire row with 1 cell-->
+	<TR>
+		<TD colspan='6'>0595995 - Graham Pomfret - BS.COIS - 2019 WINTER</TD>
+	</TR>
+<!-- this is the start of the second row 
+Each instance of td is one cell in the table
+The following Classes exist in the table, 1 for each course:
+cois3420
+cois3040
+math2600
+other (this is the one that doesn't exist but takes up 3 columns as per question 2
+
+Each course is also marked with the class 'lecture, lab, or seminar which will make this able to be integrated with Javascript-->
+	<TR>
+		<TD class='day'> </TD>
+		<TD class='day'> Monday</TD>
+		<TD class='day'> Tuesday</TD>
+		<TD class='day'> Wednesday</TD>
+		<TD class='day'> Thursday</TD>
+		<TD class='day'> Friday</TD>
+	</TR>
+<!-- this is the start of the third row (each subsequent row will be marked by a blank line in between the table closing 
+tag of the previous row and its respective opening tag-->
+	<TR>
+		<TD class='day'>8:00</TD>
+		<TD></TD>
+		<TD rowspan='2' class='cois3420 lecture sc-115'> <p> COIS-3420H-A-W01</p>LEC<br />08:00-09:50<br />PTBO SC-115</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+
+	<TR>
+		<TD class='day'> 9:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD class='cois3040 lecture sc-208'> <p> COIS-3040H-A-W01</p>LEC<br />09:00-09:50<br />PTBO SC-208</TD>
+		<TD></TD>
+	</TR>
+
+	<TR>
+		<TD class='day'>10:00</TD>
+		<TD rowspan='2' class='cois3040 lecture sc-208'><p> COIS-3040H-A-W01</p>LEC<br/>10:00-11:50<br/>PTBO SC-208</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+
+	<TR>
+		<TD class='day'> 11:00</TD>
+		<TD rowspan ='2' class='math2600 lecture oca-203'><p> COIS-2600H-A-W01</p>LEC<br />11:00-12:50<br />PTBO OCA-203</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD class='math2600 lecture oca-203'><p> COIS-2600H-A-W01</p>LEC<br />11:00-11:50<br />PTBO OCA-203</TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'>12:00</TD>
+		<TD class='cois3420 lecture sc-103'><p> COIS-3420H-A-W01</p>LEC<br />12:00-12:50<br />PTBO SC-103</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD class='math2600 seminar oca-203'><p> COIS-2600H-A-W01</p>SEM<br />12:00-12:50<br />PTBO OCA-205</TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 13:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD class='cois3420 lab oca-202'><p> COIS-3420H-A-W01</p>LAB<br />13:00-13:50<br />PTBO OCA-202</TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'>14:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 15:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 16:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 17:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 18:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 19:00</TD>
+		<TD colspan='3' class='other lecture'><p> COIS-7861H-D-DB1</p>LEC<br />7:00-7:50<br /> no assigned classroom </TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 20:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+	
+	<TR>
+		<TD class='day'> 21:00</TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD></TD>
+	</TR>
+</tbody>
+</TABLE>

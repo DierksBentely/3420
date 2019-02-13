@@ -1,0 +1,115 @@
+/* Graham Pomfret
+0595995
+Assignment 1
+COIS 3420
+
+This is the second question of the first assignment, This is the style sheet for my harry potter site
+Done in Notepad++ I did my best effort to make it look like it was done in a real compiler*/
+
+
+/* This applies to heading 1, 2, and 3, it attempts to use titillium web 
+	and if that fails, it uses the classic arial as a fallback   */
+h1, h2, h3	
+{
+	font-family: 'titillium web', 'arial';
+}
+/* this addresses just the main navigation bar to make it decimal numbers*/
+#mainnav
+{
+	list-style:decimal;
+}
+/* this makes ordered lists within the nav bar lower roman numerals*/
+nav ol
+{	
+	list-style:lower-roman;
+}
+/* this makes the links in the nav bar purple*/
+nav li a
+{
+	font-weight:bold;
+	color:purple;
+}
+/* this makes the links in the lower nav bar green*/
+nav li ol a
+{
+	font-weight:bold;
+	color:green;
+}
+/* this makes the first line bold*/
+p::first-line
+{
+	font-weight:bold;
+}
+/* this makes a paragraph after a h2 have a drop cap letter */
+h2 + p::first-letter
+{
+	color: #903;
+	float: left;
+	font-family: Georgia; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	font-style:normal;
+}
+/* this makes links this color*/
+a
+{
+	color:#4d6c92;
+}
+/* when you hover over links*/
+a:hover
+{
+	color:olive;
+}
+/* any link that leads out with http indicating its an external link*/
+a[href^="http"]
+{
+	color:#508658;
+}
+/* this makes all pdfs have a small icon next to them */
+a[href$="pdf"]
+{
+	color:purple;
+	padding-right:16px;
+	background-position:right;
+	background-repeat:no-repeat;
+	background-origin: padding-box;
+	background-image: url("../img/pdf16.png")
+}
+/* this is the table for the video games*/
+table
+{
+	border:5px solid grey;
+}
+/* this is the links in the table*/
+table a:hover
+{
+	color:teal;
+}
+/* first row of the table*/
+td:first-of-type
+{
+	font-style:italic;
+}
+/* makes the even rows color different from an odd row*/
+tr:nth-child(even)
+{
+	background-color:#e0f5ff;
+}
+/* affects internal links, so links that are relative to this file in the directory*/
+a[href^="/"]
+{
+	color: 4d6c92;
+}
+/* the references section*/
+#references li
+{
+	margin-left: 1em;
+	margin-right:1em;
+	padding-bottom:1em;
+	font-size:0.8em;
+	float:left;
+	width: 15em;
+}
